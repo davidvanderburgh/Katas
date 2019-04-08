@@ -76,12 +76,22 @@ namespace WordSearchKata
                 {
                     foreach(Orientation orientation in OrientationOrder)
                     {
+                        if(WordExistsAtCoordinateOrientation(word, new Coordinate(row, column), orientation))
+                        {
+                            //TODO: finish this function
 
+                        }
                     }
                 }
             }
 
             return wordCoordinates;
+        }
+
+        public List<Coordinate> GetCoordinatesFromOriginOrientationAndLength(Coordinate origin, Orientation orientation, int length)
+        {
+
+            return new List<Coordinate>();
         }
 
         public bool WordExistsAtCoordinateOrientation(string word, Coordinate coordinate, Orientation orientation)

@@ -1,0 +1,17 @@
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKataTests.deps.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKataTests.runtimeconfig.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKataTests.runtimeconfig.dev.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKataTests.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKataTests.pdb
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKata.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\bin\Debug\netcoreapp2.1\WordSearchKata.pdb
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.csprojAssemblyReference.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.csproj.CoreCompileInputs.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.AssemblyInfoInputs.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.AssemblyInfo.cs
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.csproj.CopyComplete
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearchTests\WordSearchTests\obj\Debug\netcoreapp2.1\WordSearchKataTests.pdb

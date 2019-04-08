@@ -5748,9 +5748,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearchTests\\WordSearchTests\\WordSearchTests.csproj",
-      "projectName": "WordSearchTests",
-      "projectPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearchTests\\WordSearchTests\\WordSearchTests.csproj",
+      "projectUniqueName": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearchTests\\WordSearchTests\\WordSearchKataTests.csproj",
+      "projectName": "WordSearchKataTests",
+      "projectPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearchTests\\WordSearchTests\\WordSearchKataTests.csproj",
       "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearchTests\\WordSearchTests\\obj\\",
       "projectStyle": "PackageReference",

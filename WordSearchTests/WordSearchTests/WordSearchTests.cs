@@ -103,6 +103,33 @@ namespace WordSearchKata
         }
 
         [TestMethod]
+        public void GetCoordinatesFromOriginOrientationAndLength_FromStarTrekGrid()
+        {
+            //TODO:
+
+            List<Coordinate> test1 = wordSearchStarTrek.GetCoordinatesFromOriginOrientationAndLength(
+                new Coordinate(0, 0), WordSearch.Orientation.East, 5);
+            List<Coordinate> test1Expected = new List<Coordinate>()
+            {
+                new Coordinate(0,0),
+                new Coordinate(0,1),
+                new Coordinate(0,2),
+                new Coordinate(0,3),
+                new Coordinate(0,4)
+            };
+
+            CollectionAssert.AreEqual(test1Expected, test1);
+
+            //List<Coordinate> expectedBones = new List<Coordinate>() {
+            //    new Coordinate(0, 6),
+            //    new Coordinate(0, 7),
+            //    new Coordinate(0, 8),
+            //    new Coordinate(0, 9),
+            //    new Coordinate(0, 10)
+            //};
+        }
+
+        [TestMethod]
         public void FindWordCoordinates_FromStarTrekGrid()
         {
             List<Coordinate> expectedBones = new List<Coordinate>() {
@@ -153,13 +180,13 @@ namespace WordSearchKata
                 new Coordinate(0, 4)
             };
 
-            Assert.AreEqual(expectedBones, wordSearchStarTrek.FindWordCoordinates("BONES"));
-            Assert.AreEqual(expectedKhan, wordSearchStarTrek.FindWordCoordinates("KHAN"));
-            Assert.AreEqual(expectedKirk, wordSearchStarTrek.FindWordCoordinates("KIRK"));
-            Assert.AreEqual(expectedScotty, wordSearchStarTrek.FindWordCoordinates("SCOTTY"));
-            Assert.AreEqual(expectedSpock, wordSearchStarTrek.FindWordCoordinates("SPOCK"));
-            Assert.AreEqual(expectedSulu, wordSearchStarTrek.FindWordCoordinates("SULU"));
-            Assert.AreEqual(expectedUhura, wordSearchStarTrek.FindWordCoordinates("UHURA"));
+            CollectionAssert.AreEqual(expectedBones, wordSearchStarTrek.FindWordCoordinates("BONES"));
+            CollectionAssert.AreEqual(expectedKhan, wordSearchStarTrek.FindWordCoordinates("KHAN"));
+            CollectionAssert.AreEqual(expectedKirk, wordSearchStarTrek.FindWordCoordinates("KIRK"));
+            CollectionAssert.AreEqual(expectedScotty, wordSearchStarTrek.FindWordCoordinates("SCOTTY"));
+            CollectionAssert.AreEqual(expectedSpock, wordSearchStarTrek.FindWordCoordinates("SPOCK"));
+            CollectionAssert.AreEqual(expectedSulu, wordSearchStarTrek.FindWordCoordinates("SULU"));
+            CollectionAssert.AreEqual(expectedUhura, wordSearchStarTrek.FindWordCoordinates("UHURA"));
 
         }
 

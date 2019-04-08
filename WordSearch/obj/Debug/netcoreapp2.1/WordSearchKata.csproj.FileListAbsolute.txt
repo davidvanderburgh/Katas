@@ -8,3 +8,4 @@ C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordS
 C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.AssemblyInfo.cs
 C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.dll
 C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.pdb
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.csprojAssemblyReference.cache
