@@ -62,29 +62,20 @@ namespace WordSearchKata
         public List<Coordinate> FindWordCoordinates(string word)
         {
             List<Coordinate> wordCoordinates = new List<Coordinate>();
-
-            //starting at every cell
-            //  look cell by cell in every direction to see if the word is there
-            //  if so
-            //      mark the coordinates
-            //  otherwise
-            //      try the next cell in every direction
-
             for (int row = 0; row < GridSize; row++)
             {
                 for (int column = 0; column < GridSize; column++)
                 {
+                    Coordinate origin = new Coordinate(row, column);
                     foreach(Orientation orientation in OrientationOrder)
-                    {
-                        if(WordExistsAtCoordinateOrientation(word, new Coordinate(row, column), orientation))
+                    {                        
+                        if(WordExistsAtCoordinateOrientation(word, origin, orientation))
                         {
-                            //TODO: finish this function
-
+                            return GetCoordinatesFromOriginOrientationAndLength(origin, orientation, word.Length);
                         }
                     }
                 }
             }
-
             return wordCoordinates;
         }
 
