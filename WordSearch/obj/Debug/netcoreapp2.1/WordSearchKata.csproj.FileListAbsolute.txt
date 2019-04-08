@@ -1,0 +1,11 @@
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\bin\Debug\netcoreapp2.1\WordSearchKata.deps.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\bin\Debug\netcoreapp2.1\WordSearchKata.runtimeconfig.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\bin\Debug\netcoreapp2.1\WordSearchKata.runtimeconfig.dev.json
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\bin\Debug\netcoreapp2.1\WordSearchKata.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\bin\Debug\netcoreapp2.1\WordSearchKata.pdb
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.csprojAssemblyReference.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.csproj.CoreCompileInputs.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.AssemblyInfoInputs.cache
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.AssemblyInfo.cs
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.dll
+C:\Users\davidv\Pillar Kata\Word Search\WordSearch\obj\Debug\netcoreapp2.1\WordSearchKata.pdb

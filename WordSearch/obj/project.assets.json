@@ -687,9 +687,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearch\\WordSearch.csproj",
-      "projectName": "WordSearch",
-      "projectPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearch\\WordSearch.csproj",
+      "projectUniqueName": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearch\\WordSearchKata.csproj",
+      "projectName": "WordSearchKata",
+      "projectPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearch\\WordSearchKata.csproj",
       "packagesPath": "C:\\Users\\davidv\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\davidv\\Pillar Kata\\Word Search\\WordSearch\\obj\\",
       "projectStyle": "PackageReference",

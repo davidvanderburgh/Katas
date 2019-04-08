@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSearch", "WordSearch\WordSearch.csproj", "{9B512BEA-9C08-4B1B-917E-EF0F6337450C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordSearchKata", "WordSearch\WordSearchKata.csproj", "{9B512BEA-9C08-4B1B-917E-EF0F6337450C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordSearchTests", "..\WordSearchTests\WordSearchTests.csproj", "{A6044C9C-761A-406C-B5DC-ACAA019CE368}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WordSearchKataTests", "..\WordSearchTests\WordSearchKataTests.csproj", "{A6044C9C-761A-406C-B5DC-ACAA019CE368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
