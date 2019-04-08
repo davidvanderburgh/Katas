@@ -39,12 +39,20 @@ namespace WordSearchKata
             }
         }
 
-
-
-        public string AnswerWordLocations(string word)
+        public string WordLocationsString(string word)
         {
             return "";
         }
+
+        public List<Coordinate> FindWordCoordinates(string word)
+        {
+            List<Coordinate> wordCoordinates = new List<Coordinate>();
+
+
+            return wordCoordinates;
+        }
+
+
 
         public string AnswerLocations()
         {
