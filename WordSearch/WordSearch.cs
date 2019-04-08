@@ -10,6 +10,10 @@ namespace WordSearchKata
         public string[,] GridArray { get; private set; }
         public int GridSize { get; private set; }
         public List<string> Answers { get; private set; }
+        public enum Orientation
+        {
+            North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
+        };
 
         public WordSearch(string gridString)
         {
@@ -48,6 +52,21 @@ namespace WordSearchKata
         {
             List<Coordinate> wordCoordinates = new List<Coordinate>();
 
+            //starting at every cell
+            //  look cell by cell in every direction to see if the word is there
+            //  if so
+            //      mark the coordinates
+            //  otherwise
+            //      try the next cell in every direction
+
+            for (int row = 0; row < GridSize; row++)
+            {
+                for (int column = 0; column < GridSize; column++)
+                {
+                    //
+                }
+            }
+
 
             return wordCoordinates;
         }
@@ -57,6 +76,64 @@ namespace WordSearchKata
         public string AnswerLocations()
         {
             return "";
+        }
+
+        public bool CoordinateIsOutOfBounds(Coordinate coordinate)
+        {
+            return (coordinate.Row >= GridSize || 
+                coordinate.Row < 0 || 
+                coordinate.Column >= GridSize || 
+                coordinate.Column < 0);
+        }
+
+        private int GetRowIncrementFromOrientation(Orientation orientation)
+        {
+            switch (orientation)
+            {
+                case Orientation.North:
+                    return 0;
+                case Orientation.NorthEast:
+                    return 1;
+                case Orientation.East:
+                    return 1;
+                case Orientation.SouthEast:
+                    return 1;
+                case Orientation.South:
+                    return 0;
+                case Orientation.SouthWest:
+                    return -1;
+                case Orientation.West:
+                    return -1;
+                case Orientation.NorthWest:
+                    return -1;
+                default:
+                    return 0;
+            }
+        }
+
+        private int GetColumnIncrementFromOrientation(Orientation orientation)
+        {
+            switch (orientation)
+            {
+                case Orientation.North:
+                    return -1;
+                case Orientation.NorthEast:
+                    return -1;
+                case Orientation.East:
+                    return 0;
+                case Orientation.SouthEast:
+                    return 1;
+                case Orientation.South:
+                    return 1;
+                case Orientation.SouthWest:
+                    return 1;
+                case Orientation.West:
+                    return 0;
+                case Orientation.NorthWest:
+                    return -1;
+                default:
+                    return 0;
+            }
         }
     }
 }
