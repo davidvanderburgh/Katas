@@ -14,6 +14,17 @@ namespace WordSearchKata
         {
             North, NorthEast, East, SouthEast, South, SouthWest, West, NorthWest
         };
+        private List<Orientation> OrientationOrder = new List<Orientation>()
+        {
+            Orientation.North,
+            Orientation.NorthEast,
+            Orientation.East,
+            Orientation.SouthEast,
+            Orientation.South,
+            Orientation.SouthWest,
+            Orientation.West,
+            Orientation.NorthWest
+        };
 
         public WordSearch(string gridString)
         {
@@ -63,7 +74,10 @@ namespace WordSearchKata
             {
                 for (int column = 0; column < GridSize; column++)
                 {
-                    //
+                    foreach(Orientation orientation in OrientationOrder)
+                    {
+
+                    }
                 }
             }
 
@@ -71,6 +85,11 @@ namespace WordSearchKata
             return wordCoordinates;
         }
 
+        public bool WordExistsAtCoordinateOrientation(string word, Coordinate coordinate, Orientation orientation)
+        {
+
+            return false;
+        }
 
 
         public string AnswerLocations()
@@ -86,7 +105,7 @@ namespace WordSearchKata
                 coordinate.Column < 0);
         }
 
-        private int GetRowIncrementFromOrientation(Orientation orientation)
+        private int GetColumnIncrementFromOrientation(Orientation orientation)
         {
             switch (orientation)
             {
@@ -111,7 +130,7 @@ namespace WordSearchKata
             }
         }
 
-        private int GetColumnIncrementFromOrientation(Orientation orientation)
+        private int GetRowIncrementFromOrientation(Orientation orientation)
         {
             switch (orientation)
             {
