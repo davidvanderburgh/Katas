@@ -11,7 +11,6 @@ namespace WordSearchKata
         public int GridSize { get; private set; }
         public List<string> Answers { get; private set; }
 
-
         public WordSearch(string gridString)
         {
             GridString = gridString;
@@ -22,7 +21,11 @@ namespace WordSearchKata
         {
             string[] rows = GridString.Split("\n");
 
-            
+            //fill in answers
+            string[] answers = rows[0].Split(',');
+            Answers = new List<string>(answers);
+
+            //generate char[,]
         }
 
 
