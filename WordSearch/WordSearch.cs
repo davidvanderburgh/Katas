@@ -88,18 +88,20 @@ namespace WordSearchKata
         {
             for (int letterPosition = 0; letterPosition < word.Length; letterPosition++)
             {
-
+                Coordinate charCoordinate = new Coordinate(
+                    coordinate.Row + (letterPosition * GetRowIncrementFromOrientation(orientation)),
+                    coordinate.Column + (letterPosition * GetColumnIncrementFromOrientation(orientation)));
+                if (!LetterExistsAtCoordinate(word[letterPosition], charCoordinate))
+                {
+                    return false;
+                }
             }
-
-            return false;
+            return true;
         }
 
         public bool LetterExistsAtCoordinate(char letter, Coordinate coordinate)
         {
-            if (coordinate.Column < 0 || 
-                coordinate.Column > GridSize ||
-                coordinate.Row < 0 ||
-                coordinate.Row > GridSize)
+            if (CoordinateIsOutOfBounds(coordinate))
             {
                 return false;
             }
