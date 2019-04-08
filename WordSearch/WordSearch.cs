@@ -41,11 +41,14 @@ namespace WordSearchKata
 
 
 
-
-        public string GetAnswerString()
+        public string AnswerWordLocations(string word)
         {
             return "";
         }
 
+        public string AnswerLocations()
+        {
+            return "";
+        }
     }
 }
