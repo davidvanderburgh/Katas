@@ -81,16 +81,24 @@ namespace WordSearchKata
                 }
             }
 
-
             return wordCoordinates;
         }
 
         public bool WordExistsAtCoordinateOrientation(string word, Coordinate coordinate, Orientation orientation)
         {
+            for (int letterPosition = 0; letterPosition < word.Length; letterPosition++)
+            {
+
+            }
 
             return false;
         }
 
+        public bool LetterExistsAtCoordinate(char letter, Coordinate coordinate)
+        {
+
+            return false;
+        }
 
         public string AnswerLocations()
         {
