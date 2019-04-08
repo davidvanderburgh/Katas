@@ -14,5 +14,12 @@ namespace WordSearchKata
             Row = row;
             Column = column;
         }
+
+        public override bool Equals(object obj)
+        {
+            Coordinate otherCoordinate = (Coordinate)obj;
+            return ((Row == otherCoordinate.Row) && (Column == otherCoordinate.Column));
+        }
+
     }
 }

@@ -90,8 +90,15 @@ namespace WordSearchKata
 
         public List<Coordinate> GetCoordinatesFromOriginOrientationAndLength(Coordinate origin, Orientation orientation, int length)
         {
-
-            return new List<Coordinate>();
+            List<Coordinate> coordinates = new List<Coordinate>();
+            for (int letterPosition = 0; letterPosition < length; letterPosition++)
+            {
+                Coordinate coordinate = new Coordinate(
+                    origin.Row + (letterPosition * GetRowIncrementFromOrientation(orientation)),
+                    origin.Column + (letterPosition * GetColumnIncrementFromOrientation(orientation)));
+                coordinates.Add(coordinate);
+            }
+            return coordinates;
         }
 
         public bool WordExistsAtCoordinateOrientation(string word, Coordinate coordinate, Orientation orientation)

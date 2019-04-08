@@ -105,8 +105,6 @@ namespace WordSearchKata
         [TestMethod]
         public void GetCoordinatesFromOriginOrientationAndLength_FromStarTrekGrid()
         {
-            //TODO:
-
             List<Coordinate> test1 = wordSearchStarTrek.GetCoordinatesFromOriginOrientationAndLength(
                 new Coordinate(0, 0), WordSearch.Orientation.East, 5);
             List<Coordinate> test1Expected = new List<Coordinate>()
@@ -120,13 +118,42 @@ namespace WordSearchKata
 
             CollectionAssert.AreEqual(test1Expected, test1);
 
-            //List<Coordinate> expectedBones = new List<Coordinate>() {
-            //    new Coordinate(0, 6),
-            //    new Coordinate(0, 7),
-            //    new Coordinate(0, 8),
-            //    new Coordinate(0, 9),
-            //    new Coordinate(0, 10)
-            //};
+            List<Coordinate> test2 = wordSearchStarTrek.GetCoordinatesFromOriginOrientationAndLength(
+                new Coordinate(5, 6), WordSearch.Orientation.West, 3);
+            List<Coordinate> test2Expected = new List<Coordinate>()
+            {
+                new Coordinate(5,6),
+                new Coordinate(5,5),
+                new Coordinate(5,4)
+            };
+
+            CollectionAssert.AreEqual(test2Expected, test2);
+
+            List<Coordinate> test3 = wordSearchStarTrek.GetCoordinatesFromOriginOrientationAndLength(
+                new Coordinate(0, 5), WordSearch.Orientation.South, 7);
+            List<Coordinate> test3Expected = new List<Coordinate>()
+            {
+                new Coordinate(0,5),
+                new Coordinate(1,5),
+                new Coordinate(2,5),
+                new Coordinate(3,5),
+                new Coordinate(4,5),
+                new Coordinate(5,5),
+                new Coordinate(6,5)
+            };
+
+            CollectionAssert.AreEqual(test3Expected, test3);
+
+            List<Coordinate> test4 = wordSearchStarTrek.GetCoordinatesFromOriginOrientationAndLength(
+                new Coordinate(3, 3), WordSearch.Orientation.SouthEast, 3);
+            List<Coordinate> test4Expected = new List<Coordinate>()
+            {
+                new Coordinate(3,3),
+                new Coordinate(4,4),
+                new Coordinate(5,5)
+            };
+
+            CollectionAssert.AreEqual(test4Expected, test4);
         }
 
         [TestMethod]
