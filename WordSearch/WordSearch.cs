@@ -96,8 +96,17 @@ namespace WordSearchKata
 
         public bool LetterExistsAtCoordinate(char letter, Coordinate coordinate)
         {
-
-            return false;
+            if (coordinate.Column < 0 || 
+                coordinate.Column > GridSize ||
+                coordinate.Row < 0 ||
+                coordinate.Row > GridSize)
+            {
+                return false;
+            }
+            else
+            {
+                return (GridArray[coordinate.Row, coordinate.Column] == letter.ToString());
+            }            
         }
 
         public string AnswerLocations()
