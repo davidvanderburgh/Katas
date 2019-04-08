@@ -21,5 +21,10 @@ namespace WordSearchKata
             return ((Row == otherCoordinate.Row) && (Column == otherCoordinate.Column));
         }
 
+        public override string ToString()
+        {
+            return "(" + Column + ", " + Row + ")";
+        }
+
     }
 }

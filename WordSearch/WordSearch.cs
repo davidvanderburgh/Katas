@@ -56,7 +56,11 @@ namespace WordSearchKata
 
         public string WordLocationsString(string word)
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.Append(word + ": ");
+            sb.Append(string.Join(',', FindWordCoordinates(word)));
+
+            return sb.ToString();
         }
 
         public List<Coordinate> FindWordCoordinates(string word)
