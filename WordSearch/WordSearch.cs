@@ -6,12 +6,16 @@ namespace WordSearchKata
 {
     public class WordSearch
     {
-        public string Grid { get; set; }
+        public string GridString { get; private set; }
+        public char[,] GridArray { get; private set; }
 
-        public WordSearch(string inputGrid)
+        public WordSearch(string gridString)
         {
-            Grid = inputGrid;
+            GridString = gridString;
         }
+
+
+
 
         public string GetAnswerString()
         {
