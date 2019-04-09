@@ -8,6 +8,7 @@ namespace WordSearchKata
     {
         WordSearch wordSearchStarTrek;
         WordSearch wordSearchStarWars;
+        WordSearch wordSearchStarGate;
 
         [TestInitialize]
         public void Initialize()
@@ -44,6 +45,22 @@ namespace WordSearchKata
             "S,N,F,W,H,P,T,J,W,Y";
 
             wordSearchStarWars = new WordSearch(gridStarWars);
+
+            string gridStarGate = "CAMERON,DANIEL,GEORGE,HANK,JACK,JONAS,SAMANTHA,VALA\n" +
+                "U,R,K,A,H,E,O,D,M,K,S,U\n" +
+                "D,Q,B,C,V,I,Q,A,N,N,D,R\n" +
+                "A,N,Y,C,A,X,N,N,P,A,J,A\n" +
+                "Y,O,E,N,A,J,X,I,W,H,L,D\n" +
+                "N,O,C,A,E,M,Y,E,F,A,B,L\n" +
+                "J,M,Y,Q,H,J,E,L,V,K,K,B\n" +
+                "C,I,I,G,Y,Y,O,R,S,I,G,M\n" +
+                "S,A,M,A,N,T,H,A,O,E,U,S\n" +
+                "S,R,L,E,C,E,E,P,O,N,I,I\n" +
+                "M,R,I,E,U,N,R,R,S,N,D,L\n" +
+                "P,R,A,J,N,H,G,Z,Y,P,V,J\n" +
+                "G,M,X,J,S,E,S,A,N,O,J,U\n";
+
+            wordSearchStarGate = new WordSearch(gridStarGate);
         }
 
         [TestMethod]
@@ -276,6 +293,17 @@ namespace WordSearchKata
                 "YODA: (7, 5),(6, 4),(5, 3),(4, 2)\r\n";
 
             Assert.AreEqual(expectedOutputStarWars, wordSearchStarWars.AnswerLocations());
+
+            string expectedOutputStarGate = "CAMERON: (3, 2),(4, 3),(5, 4),(6, 5),(7, 6),(8, 7),(9, 8)\r\n" +
+                "DANIEL: (7, 0),(7, 1),(7, 2),(7, 3),(7, 4),(7, 5)\r\n" +
+                "GEORGE: (10, 6),(9, 7),(8, 8),(7, 9),(6, 10),(5, 11)\r\n" +
+                "HANK: (9, 3),(9, 2),(9, 1),(9, 0)\r\n" +
+                "JACK: (5, 3),(4, 2),(3, 1),(2, 0)\r\n" +
+                "JONAS: (10, 11),(9, 11),(8, 11),(7, 11),(6, 11)\r\n" +
+                "SAMANTHA: (0, 7),(1, 7),(2, 7),(3, 7),(4, 7),(5, 7),(6, 7),(7, 7)\r\n" +
+                "VALA: (8, 5),(9, 4),(10, 3),(11, 2)\r\n";
+
+            Assert.AreEqual(expectedOutputStarGate, wordSearchStarGate.AnswerLocations());
         }
     }
 }

@@ -36,11 +36,9 @@ namespace WordSearchKata
         {
             string[] rows = GridString.Split("\n");
 
-            //fill in answers
             string[] answers = rows[0].Split(',');
             Answers = new List<string>(answers);
 
-            //generate string[,]
             GridSize = rows[1].Split(',').Length;
             GridArray = new string[GridSize, GridSize];
 
