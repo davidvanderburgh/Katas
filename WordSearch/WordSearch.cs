@@ -63,6 +63,33 @@ namespace WordSearchKata
             return sb.ToString();
         }
 
+        public string AnswerLocations()
+        {
+            StringBuilder sb = new StringBuilder();
+            
+            foreach (string answer in Answers)
+            {
+                sb.AppendLine(WordLocationsString(answer));
+            }
+
+            return sb.ToString();
+        }
+
+        public string GridStringForCLI()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int row = 0; row < GridSize; row++)
+            {
+                for (int column = 0; column < GridSize; column++)
+                {
+                    sb.Append(GridArray[row, column] + " ");
+                }
+                sb.AppendLine();
+            }
+
+            return sb.ToString();
+        }
+
         public List<Coordinate> FindWordCoordinates(string word)
         {
             List<Coordinate> wordCoordinates = new List<Coordinate>();
@@ -121,11 +148,6 @@ namespace WordSearchKata
             {
                 return (GridArray[coordinate.Row, coordinate.Column] == letter.ToString());
             }            
-        }
-
-        public string AnswerLocations()
-        {
-            return "";
         }
 
         public bool CoordinateIsOutOfBounds(Coordinate coordinate)

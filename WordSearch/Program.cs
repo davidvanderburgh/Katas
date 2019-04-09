@@ -26,6 +26,10 @@ namespace WordSearchKata
 
             WordSearch wordSearch = new WordSearch(gridString);
 
+            Console.WriteLine(wordSearch.GridStringForCLI());
+            Console.Write(wordSearch.AnswerLocations());
+
+
             Console.ReadLine();
         }
     }
