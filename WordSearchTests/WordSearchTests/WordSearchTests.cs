@@ -7,11 +7,12 @@ namespace WordSearchKata
     public class WordSearchTests
     {
         WordSearch wordSearchStarTrek;
+        WordSearch wordSearchStarWars;
 
         [TestInitialize]
         public void Initialize()
         {
-            string gridString = "BONES,KHAN,KIRK,SCOTTY,SPOCK,SULU,UHURA\n" +
+            string gridStarTrek = "BONES,KHAN,KIRK,SCOTTY,SPOCK,SULU,UHURA\n" +
                 "U,M,K,H,U,L,K,I,N,V,J,O,C,W,E\n" +
                 "L,L,S,H,K,Z,Z,W,Z,C,G,J,U,Y,G\n" +
                 "H,S,U,P,J,P,R,J,D,H,S,B,X,T,G\n" +
@@ -28,9 +29,22 @@ namespace WordSearchKata
                 "W,Z,M,I,S,U,K,U,R,B,I,D,U,X,S\n" +
                 "K,Y,L,B,Q,Q,P,M,D,F,C,K,E,A,B";
 
-            wordSearchStarTrek = new WordSearch(gridString);
-        }
+            wordSearchStarTrek = new WordSearch(gridStarTrek);
 
+            string gridStarWars = "CHEWBACCA,JARJAR,KENOBI,LUKE,VADER,YODA\n" +
+            "W,Z,R,K,I,H,C,J,M,J\n" +
+            "I,Q,C,P,E,P,M,T,F,A\n" +
+            "I,W,H,T,A,N,I,B,L,R\n" +
+            "J,K,J,T,W,D,O,Z,P,J\n" +
+            "E,K,U,L,O,V,O,B,K,A\n" +
+            "U,G,Q,Y,A,Z,Q,Y,I,R\n" +
+            "X,D,N,D,P,H,P,V,Y,W\n" +
+            "C,H,E,W,B,A,C,C,A,E\n" +
+            "J,R,Y,O,P,X,Y,O,L,X\n" +
+            "S,N,F,W,H,P,T,J,W,Y";
+
+            wordSearchStarWars = new WordSearch(gridStarWars);
+        }
 
         [TestMethod]
         public void Answers_FromStarTrekString()
@@ -47,7 +61,6 @@ namespace WordSearchKata
             };
             CollectionAssert.AreEqual(answers, wordSearchStarTrek.Answers);
         }
-
 
         [TestMethod]
         public void GenerateGridArray_FromStarTrekString()
@@ -222,7 +235,6 @@ namespace WordSearchKata
             CollectionAssert.AreEqual(expectedUhura, wordSearchStarTrek.FindWordCoordinates("UHURA"));
         }
 
-
         [TestMethod]
         public void FindWord_FromStarTrekGrid()
         {
@@ -244,9 +256,9 @@ namespace WordSearchKata
         }
 
         [TestMethod]
-        public void FindWords_15x15TestGrid()
+        public void FindWords_FromStarTrekGrid()
         {
-            string expectedOutput = "BONES: (0, 6),(0, 7),(0, 8),(0, 9),(0, 10)\r\n" +
+            string expectedOutputStarTrek = "BONES: (0, 6),(0, 7),(0, 8),(0, 9),(0, 10)\r\n" +
             "KHAN: (5, 9),(5, 8),(5, 7),(5, 6)\r\n" +
             "KIRK: (4, 7),(3, 7),(2, 7),(1, 7)\r\n" +
             "SCOTTY: (0, 5),(1, 5),(2, 5),(3, 5),(4, 5),(5, 5)\r\n" +
@@ -254,7 +266,16 @@ namespace WordSearchKata
             "SULU: (3, 3),(2, 2),(1, 1),(0, 0)\r\n" +
             "UHURA: (4, 0),(3, 1),(2, 2),(1, 3),(0, 4)\r\n";
 
-            Assert.AreEqual(expectedOutput, wordSearchStarTrek.AnswerLocations());
+            Assert.AreEqual(expectedOutputStarTrek, wordSearchStarTrek.AnswerLocations());
+            
+            string expectedOutputStarWars = "CHEWBACCA: (0, 7),(1, 7),(2, 7),(3, 7),(4, 7),(5, 7),(6, 7),(7, 7),(8, 7)\r\n" +
+                "JARJAR: (9, 0),(9, 1),(9, 2),(9, 3),(9, 4),(9, 5)\r\n" +
+                "KENOBI: (3, 0),(4, 1),(5, 2),(6, 3),(7, 4),(8, 5)\r\n" +
+                "LUKE: (3, 4),(2, 4),(1, 4),(0, 4)\r\n" +
+                "VADER: (5, 4),(4, 5),(3, 6),(2, 7),(1, 8)\r\n" +
+                "YODA: (7, 5),(6, 4),(5, 3),(4, 2)\r\n";
+
+            Assert.AreEqual(expectedOutputStarWars, wordSearchStarWars.AnswerLocations());
         }
     }
 }
